@@ -16,7 +16,7 @@ const Navbar = () => {
       ?.replace(/(\d{2})(\d{2})$/, '$1:$2') || '';
 
   return (
-    <div className="flex items-center justify-between p-4">
+    <div className=" flex items-center justify-between p-4">
       <div className="cursor-pointer text-[18px] text-gray-400">
         <RiGeminiFill className="transition-tranform duration-300 hover:text-black" />
       </div>
@@ -25,7 +25,7 @@ const Navbar = () => {
           {time} {tz}
         </div>
         <div className="group flex cursor-pointer items-center gap-1 text-gray-400 hover:text-[#656467]">
-          <div className="text-[14px] font-semibold capitalize">
+          <div className="text-[14px] capitalize">
             explore events{' '}
           </div>
           <div className="transform transition-transform duration-300 group-hover:-translate-y-px">
