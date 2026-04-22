@@ -52,6 +52,6 @@ body {
 @layer base {
   button,
   a ,link {
-    @apply cursor-pointer;
+    cursor: pointer;
   }
 }
