@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="text-[14px] text-gray-400 uppercase">
           {time} {tz}
         </div>
-        <div className="group flex cursor-pointer items-center gap-1 text-gray-400 hover:text-[#656467]">
+        <div className=" flex cursor-pointer items-center gap-1 text-gray-400 hover:text-[#656467]">
           <div className="text-[14px] capitalize">
             <div className="group hover:text-foreground flex cursor-pointer items-center gap-1 text-gray-400">
               <div className="text-[14px] font-semibold capitalize">
