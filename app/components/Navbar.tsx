@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import { RiGeminiFill } from 'react-icons/ri';
 import { MdOutlineArrowOutward } from 'react-icons/md';
-import Link from 'next/link';
 
 const Navbar = () => {
   const [time, setTime] = useState<Date | null>(null);
@@ -38,21 +37,15 @@ const Navbar = () => {
             <span className="invisible">00:00:00 GMT+05:30</span>
           )}
         </div>
-        <div className="flex items-center gap-1 text-gray-400 hover:text-[#656467]">
-          <div className="text-[14px] capitalize">
-            <div className="group hover:text-foreground flex items-center gap-1 text-gray-400">
-              <Link href="" className="text-[14px] font-semibold capitalize">
-                explore events{' '}
-              </Link>
-              <div className="transform transition-transform duration-300 group-hover:-translate-y-px">
-                <MdOutlineArrowOutward />
-              </div>
-            </div>
-          </div>
-          <div className="">
-            <button className="bg-nav-btn-bg text-nav-btn-text hover:bg-nav-btn-hover-bg hover:text-nav-btn-hover-text flex items-center justify-center rounded-full px-3 py-1 text-[14px] duration-300">
-              Sign In
-            </button>
+
+        <div className="group flex cursor-pointer items-center gap-1">
+           <div className="group hover:text-foreground flex cursor-pointer items-center gap-1 text-gray-400">
+             <div className="text-[14px] font-semibold capitalize">
+               explore events
+             </div>
+             <div className="transform transition-transform duration-300 group-hover:-translate-y-px">
+               <MdOutlineArrowOutward />
+             </div>
           </div>
         </div>
       </div>
