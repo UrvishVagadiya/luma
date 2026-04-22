@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useSyncExternalStore } from "react";
 
 const Hero = () => {
@@ -15,8 +14,8 @@ const Hero = () => {
   );
 
   const videoSrc = isDarkMode
-    ? "https://cdn.lu.ma/landing/phone-dark.webm"
-    : "https://cdn.lu.ma/landing/phone-light.webm";
+    ? "./phone-dark.webm"
+    : "./phone-light.webm";
 
   return (
     <div className="flex justify-center mx-auto gap-20 mt-12">
@@ -39,7 +38,6 @@ const Hero = () => {
       </div>
 
       <div className='w-155 h-165'>
-        {/* key={videoSrc} forces the video to reload when source changes */}
         <video 
           key={videoSrc}
           autoPlay 
