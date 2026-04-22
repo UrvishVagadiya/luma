@@ -13,8 +13,8 @@ const Hero = () => {
   );
 
   const videoSrc = isDarkMode
-    ? "https://cdn.lu.ma/landing/phone-dark.webm"
-    : "https://cdn.lu.ma/landing/phone-light.webm";
+    ? "./phone-dark.webm"
+    : "./phone-light.webm";
 
   return (
     <div className="flex justify-center mx-auto gap-20 mt-12">
