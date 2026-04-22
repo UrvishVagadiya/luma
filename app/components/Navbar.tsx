@@ -1,5 +1,6 @@
 import { RiGeminiFill } from 'react-icons/ri';
 import { MdOutlineArrowOutward } from 'react-icons/md';
+import Link from 'next/link';
 const Navbar = () => {
   const d = new Date();
 
@@ -24,12 +25,12 @@ const Navbar = () => {
         <div className="text-[14px] text-gray-400 uppercase">
           {time} {tz}
         </div>
-        <div className="group flex cursor-pointer items-center gap-1 text-gray-400 hover:text-[#656467]">
+        <div className="flex items-center gap-1 text-gray-400 hover:text-[#656467]">
           <div className="text-[14px] capitalize">
             <div className="group hover:text-foreground flex cursor-pointer items-center gap-1 text-gray-400">
-              <div className="text-[14px] font-semibold capitalize">
+              <Link href="" className="text-[14px] font-semibold capitalize">
                 explore events{' '}
-              </div>
+              </Link>
               <div className="transform transition-transform duration-300 group-hover:-translate-y-px">
                 <MdOutlineArrowOutward />
               </div>
