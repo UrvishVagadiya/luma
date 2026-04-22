@@ -37,7 +37,6 @@ const Hero = () => {
       </div>
 
       <div className='w-155 h-165'>
-        {/* key={videoSrc} forces the video to reload when source changes */}
         <video 
           key={videoSrc}
           autoPlay 
