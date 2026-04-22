@@ -18,14 +18,19 @@ const Navbar = () => {
   return (
     <div className=" flex items-center justify-between p-4">
       <div className="cursor-pointer text-[18px] text-gray-400">
-        <RiGeminiFill className="transition-tranform duration-300 hover:text-black" />
+        <RiGeminiFill className="transition-transform duration-300 hover:text-foreground" />
       </div>
       <div className="flex items-center gap-4">
         <div className="text-[14px] text-gray-400 uppercase">
           {time} {tz}
         </div>
+<<<<<<< Updated upstream
         <div className="group flex cursor-pointer items-center gap-1 text-gray-400 hover:text-[#656467]">
           <div className="text-[14px] capitalize">
+=======
+        <div className="group flex cursor-pointer items-center gap-1 text-gray-400 hover:text-foreground">
+          <div className="text-[14px] font-semibold capitalize">
+>>>>>>> Stashed changes
             explore events{' '}
           </div>
           <div className="transform transition-transform duration-300 group-hover:-translate-y-px">
@@ -33,7 +38,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="">
-          <button className="trasition-transform flex cursor-pointer items-center justify-center rounded-full bg-[#EEE9EA] px-3 py-1 text-[14px] text-gray-600 duration-300 hover:bg-[#656467] hover:text-white">
+          <button className="flex cursor-pointer items-center justify-center rounded-full bg-nav-btn-bg px-3 py-1 text-[14px] text-nav-btn-text  duration-300 hover:bg-nav-btn-hover-bg hover:text-nav-btn-hover-text">
             Sign In
           </button>
         </div>
