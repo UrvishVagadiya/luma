@@ -18,24 +18,28 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between p-4">
       <div className="cursor-pointer text-[18px] text-gray-400">
-        <RiGeminiFill className="transition-tranform duration-300 hover:text-black" />
+        <RiGeminiFill className="hover:text-foreground transition-transform duration-300" />
       </div>
       <div className="flex items-center gap-4">
         <div className="text-[14px] text-gray-400 uppercase">
           {time} {tz}
         </div>
         <div className="group flex cursor-pointer items-center gap-1 text-gray-400 hover:text-[#656467]">
-          <div className="text-[14px] font-semibold capitalize">
-            explore events{' '}
+          <div className="text-[14px] capitalize">
+            <div className="group hover:text-foreground flex cursor-pointer items-center gap-1 text-gray-400">
+              <div className="text-[14px] font-semibold capitalize">
+                explore events{' '}
+              </div>
+              <div className="transform transition-transform duration-300 group-hover:-translate-y-px">
+                <MdOutlineArrowOutward />
+              </div>
+            </div>
           </div>
-          <div className="transform transition-transform duration-300 group-hover:-translate-y-px">
-            <MdOutlineArrowOutward />
+          <div className="">
+            <button className="bg-nav-btn-bg text-nav-btn-text hover:bg-nav-btn-hover-bg hover:text-nav-btn-hover-text flex cursor-pointer items-center justify-center rounded-full px-3 py-1 text-[14px] duration-300">
+              Sign In
+            </button>
           </div>
-        </div>
-        <div className="">
-          <button className="trasition-transform flex cursor-pointer items-center justify-center rounded-full bg-[#EEE9EA] px-3 py-1 text-[14px] text-gray-600 duration-300 hover:bg-[#656467] hover:text-white">
-            Sign In
-          </button>
         </div>
       </div>
     </div>
