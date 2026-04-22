@@ -48,10 +48,3 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
 }
-
-@layer base {
-  button,
-  a ,link {
-    @apply cursor-pointer;
-  }
-}
