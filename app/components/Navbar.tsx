@@ -34,11 +34,11 @@ const Navbar = () => {
                 <MdOutlineArrowOutward />
               </div>
             </div>
-            <div className="">
-              <button className="bg-nav-btn-bg text-nav-btn-text hover:bg-nav-btn-hover-bg hover:text-nav-btn-hover-text flex cursor-pointer items-center justify-center rounded-full px-3 py-1 text-[14px] duration-300">
-                Sign In
-              </button>
-            </div>
+          </div>
+          <div className="">
+            <button className="bg-nav-btn-bg text-nav-btn-text hover:bg-nav-btn-hover-bg hover:text-nav-btn-hover-text flex cursor-pointer items-center justify-center rounded-full px-3 py-1 text-[14px] duration-300">
+              Sign In
+            </button>
           </div>
         </div>
       </div>
