@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import { RiGeminiFill } from 'react-icons/ri';
 import { MdOutlineArrowOutward } from 'react-icons/md';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [time, setTime] = useState<Date | null>(null);
@@ -25,9 +26,9 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between p-4">
-      <div className="text-[18px] text-gray-400">
+      <Link href="/" className="text-[18px] text-gray-400">
         <RiGeminiFill className="hover:text-foreground transition-transform duration-300" />
-      </div>
+      </Link>
       
       <div className="flex items-center gap-4">
         <div className="text-[14px] text-gray-400 uppercase font-mono min-w-45">
@@ -38,15 +39,18 @@ const Navbar = () => {
           )}
         </div>
 
-        <div className="group flex cursor-pointer items-center gap-1">
-           <div className="group hover:text-foreground flex cursor-pointer items-center gap-1 text-gray-400">
-             <div className="text-[14px] font-semibold capitalize">
+        <div className=" flex  items-center gap-1">
+           <div className="group hover:text-foreground cursor-pointer flex  items-center gap-1 text-gray-400">
+             <Link href="/explore" className="text-[14px] font-semibold capitalize">
                explore events
-             </div>
+             </Link>
              <div className="transform transition-transform duration-300 group-hover:-translate-y-px">
                <MdOutlineArrowOutward />
              </div>
           </div>
+          <button className="ml-2 bg-nav-btn-bg text-nav-btn-text hover:bg-nav-btn-hover-bg hover:text-nav-btn-hover-text flex items-center justify-center rounded-full px-3 py-1 text-[14px] duration-300">
+            Sign In
+          </button>
         </div>
       </div>
     </div>
